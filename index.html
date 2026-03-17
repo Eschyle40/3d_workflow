@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Église Saint-Paul l'Ermite</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script type="importmap">
+            {
+                "imports": {
+                    "three": "./build/three.module.js",
+                    "three/addons/": "./jsm/"
+                }
+            }
+    </script>
+  <script type="module" crossorigin src="/Eglise-Saint-Paul-l-Ermite/assets/main-CKQsn73h.js"></script>
+  <link rel="stylesheet" crossorigin href="/Eglise-Saint-Paul-l-Ermite/assets/main-DkjSWw7I.css">
+</head>
+
+<body>
+    <!-- Bouton pour ouvrir le menu -->
+    <button class="toggle-menu-btn" id="toggleMenuBtn">
+        ☰ Menu
+    </button>
+
+    <!-- Menu glissant -->
+    <div class="sliding-menu" id="slidingMenu">
+        <div class="menu-header">
+            <div class="menu-title">Menu</div>
+            <button class="close-btn" id="closeMenuBtn">×</button>
+        </div>
+        <div class="menu-content">
+            <div class="menu-item">Accueil</div>
+            <div class="menu-item">Visite guidée</div>
+            <div class="menu-item">À propos</div>
+        </div>
+    </div>
+
+    <div id="info">
+        Église Saint-Paul l'Ermite<br />
+        ZQSD pour se déplacer, ESPACE pour sauter et MOLETTE pour zoomer
+        <a id="presentoire" href="./presentoire.html">Présentoir (lien cliquable)</a>
+    </div>
+
+    <div id="container"></div>
+
+
+
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtn = document.getElementById('toggleMenuBtn');
+    const slidingMenu = document.getElementById('slidingMenu');
+    const closeBtn = document.getElementById('closeMenuBtn');
+
+    toggleBtn.addEventListener('click', function() {
+        slidingMenu.classList.toggle('active');
+    });
+
+    closeBtn.addEventListener('click', function() {
+        slidingMenu.classList.remove('active');
+    });
+
+    // Suppression de l'événement de fermeture en cliquant en dehors
+});
+
+    </script>
+</body>
+
+</html>

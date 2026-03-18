@@ -2,23 +2,29 @@
 <html lang="fr">
 
 <head>
-    <title>Église Saint-Paul l'Ermite</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <script type="importmap">
-            {
-                "imports": {
-                    "three": "./build/three.module.js",
-                    "three/addons/": "./jsm/"
-                }
-            }
-    </script>
-  <script type="module" crossorigin src="/3d_workflow/assets/main-CKQsn73h.js"></script>
-  <link rel="stylesheet" crossorigin href="/3d_workflow/assets/main-DkjSWw7I.css">
+    <title>Église Saint-Paul l'Ermite — Modélisations 3D</title>
+    <meta name="description" content="Visite virtuelle 3D des modélisations architecturales de l'Église Saint-Paul l'Ermite" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛪</text></svg>" />
+  <script type="module" crossorigin src="./assets/main-BYofnUSA.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-BqEvTdYh.css">
 </head>
 
 <body>
+    <!-- Écran de chargement -->
+    <div id="loading-overlay">
+        <div id="loading-content">
+            <div id="loading-spinner"></div>
+            <h2>Chargement des modèles 3D</h2>
+            <div id="loading-bar-container">
+                <div id="loading-bar"></div>
+            </div>
+            <p id="loading-text">Chargement en cours...</p>
+        </div>
+    </div>
 
+    <!-- Conteneur 3D -->
     <div id="container"></div>
 
 </body>
